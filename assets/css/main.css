@@ -1938,6 +1938,10 @@ input, select, textarea {
 			width: auto;
 		}
 
+		.box.style3 h3 {
+			height: 300px;
+		}
+
 /* Icons */
 
 	.icon {
@@ -1975,7 +1979,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: 	#760d1f;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
@@ -2300,6 +2304,7 @@ input, select, textarea {
 				font-size: 1.2em;
 				width: 100%;
 				padding: 1em 0 1em 0;
+				background-color: #760d1f;
 			}
 
 				input[type="button"].large,
