@@ -19,8 +19,8 @@
 				<ul class="container">
 					<li><a href="#top">Top</a></li>
 					<li><a href="#overview">Overview</a></li>
-					<li><a href="#data">Data</a></li>
-					<li><a href="#methods">Methods</a></li>
+					<li><a href="#data_col">Data Collection</a></li>
+					<li><a href="#data_ex">Data Exploration</a></li>
 					<li><a href="#results">Results</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
@@ -94,15 +94,14 @@
 				</div>
 			</article>
 
-		<!-- Data -->
-			<article id="data" class="wrapper style3">
+		<!-- Data Collection -->
+			<article id="data_col" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h1>DATA COLLECTION</h1>
 						<h2>We mined the internet for tweets related to Marcos's achievements that contain disinformation or misinformation.</h2>
 						<p>
-							The data were scraped from <b>March 23 - 24, 2023</b>. We managed to scrape over <i>2000 tweets</i>, These tweets contain the words <b>"bbm", "oxford", "wharton"</b> and are from <i>2021 to 2022</i>. However, only <b>115 tweets</b> made it to our primary dataset since majority of these tweets were irrelevant to our topic or did not contain misinformation nor disinformation.
-							The following <b>Features</b> were noted:
+							The data were scraped from <b>March 23 - 24, 2023</b>. We managed to scrape over <i>2000 tweets</i>, These tweets contain the keywords <b>"bbm", "oxford", "wharton"</b> and are from <i>2021 to 2022</i>. However, only <b>115 tweets</b> made it to our primary dataset since majority of these tweets were irrelevant to our topic or did not contain [mis/dis]information.
+							The following <b>features</b> were noted:
 							<ul>
 								<li>The tweet's content</li>
 								<li>The tweet's posting period</li>
@@ -115,65 +114,42 @@
 								<li>The tweet's metadata such as Likes, Replies, Retweets, and Quote Tweets</li>
 							</ul>
 						</p>
-						<h1>DATA EXPLORATION</h1>
-						<h2>After obtaining our data, it's time to explore and play around with it!</h2>
-						<p>Features with <b>missing</b> values were detected by applying <i>isnull()</i> to a copy of the dataset then getting the sum per relevant column.
-							The missing values were then manually filled in. Our data doesn't have any <b>outliers</b> so no need to handle them.
+					</header>					
+				</div>
+			</article>
+
+			<!-- Data Exploration -->
+			<article id="data_ex" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>After obtaining our data, we explored and played around with it!</h2>
+						<p>Features with missing values were detected by applying <i>isnull()</i> to a copy of the dataset then getting the sum per relevant column.
+							The missing values were then manually filled in. Our data didn't have any <b>outliers</b> so we did not need to handle them.
 							The data were <b>manually formatted</b> in accordance with the project specifications.
-							Since our project is a <b>Time-Series Analysis</b>, we performed <i>interpolation</i> and <i>binning</i> on the data.</p>
+							Since our project involved <b>time-series analysis</b>, we performed <i>interpolation</i> and <i>binning</i> on the data.</p>
 					</header>
-					<div class="row">
+					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/linegraph.jpg" alt="" /></a>
+							<article class="box style2" style="height: 600px">
+								<a href="#" class="image featured" style="height: 350px"><img src="images/linegraph.jpg" alt="" /></a>
 								<h3><a href="#">Line Graph</a></h3>
-								<p>There's a notable peak in tweets on January of 2022.</p>
+								<p>There's a notable peak in the number of tweets on January 2022.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/barplot.jpg" alt="" /></a>
+							<article class="box style2" style="height: 600px">
+								<a href="#" class="image featured" style="height: 350px"><img src="images/barplot.jpg" alt="" /></a>
 								<h3><a href="#">Bar Plot</a></h3>
 								<p>There were more tweets mentioning Marcos and his educational achievements in 2022 than in 2021.</p>
 							</article>
 						</div>
 					<footer>
 						<p>Want to see how we actually explored our data?</p>
-						<a href="https://colab.research.google.com/drive/11il9ZcIDP41jFrHrim4phkfdV0iE6dtL?usp=sharing#scrollTo=B6OX5MjF1aJp" class="button large scrolly">Check out this Google Colaboratory notebook!</a>
+						<a href="https://colab.research.google.com/drive/11il9ZcIDP41jFrHrim4phkfdV0iE6dtL?usp=sharing#scrollTo=B6OX5MjF1aJp" class="button large scrolly">Check out our Google Colab notebook!</a>
 					</footer>
-						<!--
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Tools</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Tempus dolore</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								<h3><a href="#">Feugiat aliquam</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-								<h3><a href="#">Sed amet ornare</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					-->
 					</div>
 				</div>
-			</article>
+			</article> 
 
 		<!-- Modeling 
 			<article id="methods" class="wrapper style3">
@@ -205,7 +181,7 @@
 			</article>
 		-->
 
-		<!-- Results -->
+		<!-- Results 
 			<article id="results" class="wrapper style3">
 				<div class="container">
 					<header>
@@ -234,7 +210,7 @@
 					</footer>
 				</div>
 			</article> 
-
+		-->
 
 	<!-- About Us -->
 			<article id="about-us" class="wrapper style3">
