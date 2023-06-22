@@ -132,7 +132,7 @@
 			<article id="data_ex" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>After obtaining our data, we explored and played around with it.</h2>
+						<h2>After obtaining our data, we explored and looked for patterns in it.</h2>
 						<p style="text-align: justify; text-indent: 0.5in">Features with missing values were detected by applying <i>isnull()</i> to a copy of the dataset then getting the sum per relevant column.
 							The missing values were then manually filled in. Our data didn't have any <b>outliers</b> so we did not need to handle them.
 							The data were <b>manually formatted</b> in accordance with the project specifications.
@@ -191,8 +191,9 @@
 					<div class="container">
 						<header>
 							<h2>Here's what we found out.</h2>
-							<p style="text-align: justify; text-indent: 0.5in">With a <b>p-value</b> of <b>1.47e-10</b> which is less than 0.05, we reject the null hypothesis. This implies that there is indeed a <b>significant increase</b> in the number of tweets defending his credentials after filing his certificate of candidacy.</p>
+							<p style="text-align: justify; text-indent: 0.5in">With a <b>p-value</b> of <b class="unroll" id="unroll-1">1.47e-10</b> which is less than our alpha of 0.05. Put simply, this p-value and alpha indicates that it is reasonably unlikely that we would have collected the data we have now if our null hypothesis was the case. Thus, we may reject the null hypothesis. This shows that there is indeed a <b>significant increase</b> in the number of tweets defending his credentials after filing his certificate of candidacy.</p>
 						</header>
+						<!-- This used to be a container for image results that we never used.
 						<div class="row">
 							<div class="col-6 col-6-medium col-12-small">
 								<article class="box style2">
@@ -209,6 +210,7 @@
 								</article>
 							</div>
 						</div>
+						-->
 					</div>
 				</article> 
 
