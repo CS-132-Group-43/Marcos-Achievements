@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css");
+@import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css");
+@import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.css");
 
 /*
 	Miniport by HTML5 UP
@@ -1806,7 +1807,7 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					background-color: #760d1f;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
@@ -1839,6 +1840,10 @@ input, select, textarea {
 
 				ul.social li a.fa-tumblr {
 					background-color: #51718A;
+				}
+
+				ul.social li a.fa-reddit {
+					background-color: #ff6314;
 				}
 
 				ul.social li a.fa-google-plus {
@@ -2453,3 +2458,4 @@ input, select, textarea {
 .unroll {
 	color: #760d1f;
 }
+
