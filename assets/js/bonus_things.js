@@ -7,6 +7,7 @@ const unrollables_map = {
   "unroll-2" : ["features", "(attributes or characteristics that will be useful in classifying our data)"],
   "unroll-3" : ["t-test", "(a statistical test to determine if there's a significant difference between two groups)"],
   "unroll-4" : ["How Disinformation about BBM's Academic Accomplishments Followed His Announcement of Candidacy", "(explained using terms that may be alienating to laypersons, so hover over text like this to see an explanation!)"],
+  "unroll-5" : ["ordinary least-squares fit", "(method of curve-fitting minimizing the sum of the squared differences of each data point and the corresponding point on the curve)"]
   };
 
 // Handling the pulsable font-awesomes
